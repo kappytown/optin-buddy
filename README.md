@@ -11,29 +11,29 @@ OptinBuddy is an email optin form plugin for WordPress.
 
 **Description**
 
-The OptinBuddy plugin is a powerful email subscription plugin that integrates with ActiveCampaign, Contact Contact, ConvertKit, flodesk, MailChimp, MailerLite, and WordPress.
+The OptinBuddy plugin is a powerful email subscription plugin that integrates with `ActiveCampaign`, `Contact Contact`, `ConvertKit`, `flodesk`, `MailChimp`, `MailerLite`, and `WordPress`.
 
 **Installation**
 
 _From within WordPress_
 
-1. Visit **Plugins > Add New**.
-2. Search for **OptinBudd**.
-3. Install and activate the OptinBuddy plugin.
+1. Visit `Plugins > Add New`.
+2. Search for `OptinBuddy`.
+3. Install and activate the `OptinBuddy` plugin.
 
 _From WordPress.org_
 
-1. Download **OptinBuddy**.
+1. Download `OptinBuddy`.
 2. Upload the entire `OptinBuddy` directory to your `/wp-content/plugins/` directory.
-3. Visit **Plugins**.
-3. Activate the OptinBuddy plugin.
+3. Visit `Plugins`.
+3. Activate the `OptinBuddy` plugin.
 
 **Once Activated**
 
 1. Visit **OptinbBuddy > Dashboard**.
 2. Connect to your Email Provider from the list.
 3. Click on the `Add New Form` button to create your first optin form.
-4. Follow the new form flow (select form type > select form template > edit form details).
+4. Follow the new form flow (select `form type > select form template > edit form details`).
 5. Save Form.
 6. View your new optin form on your WordPress blog.
 
@@ -54,7 +54,7 @@ Add New Form (Admin Interface)
 
 Edit Form (Admin Interface)
 
-<kbd><img src="(https://github.com/user-attachments/assets/f00e7be4-07ae-4a49-bfc6-209c5943093d" alt="Edit Form View" width="400" /></kbd>
+<kbd><img src="https://github.com/user-attachments/assets/f00e7be4-07ae-4a49-bfc6-209c5943093d" alt="Edit Form View" width="400" /></kbd>
 
 Dashboard (Admin Interface)
 
@@ -62,7 +62,7 @@ Dashboard (Admin Interface)
 
 Reports (Admin Interface)
 
-<kbd><img src="(https://github.com/user-attachments/assets/ec9ce4ad-f57c-4c87-8ae4-049acc638e68" alt="Reports View" width="400" /></kbd>
+<kbd><img src="https://github.com/user-attachments/assets/ec9ce4ad-f57c-4c87-8ae4-049acc638e68" alt="Reports View" width="400" /></kbd>
 
 Contact Us (Admin Interface)
 
