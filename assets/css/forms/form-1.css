@@ -1,0 +1,41 @@
+.opt-bud .email-container.form-1 {
+	max-width: 700px;
+}
+
+.opt-bud .email-container.form-1 .field {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 10px;
+	white-space: nowrap;
+	text-align: left;
+}
+
+.opt-bud .email-container.form-1 .field>input {
+	/* flex-grow: 1; */
+	/* subtract button width - gap */
+	/* flex-basis: calc(100% - 110px); */
+	flex: 100 1 auto;
+}
+
+.opt-bud .email-container.form-1 .field>button {
+	/* flex-grow: 1; */
+	/* flex-basis: 100px; */
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+/* IF NAME FIELD IS ADDED... */
+.opt-bud .email-container.form-1.has-name .field input {
+	/* 170 (button width + gap + gap) / 2 */
+	/* flex-basis: calc(50% - 60px); */
+	min-width: 150px;
+}
+
+.opt-bud .email-container.form-1.has-name .field {
+	flex-direction: column;
+}
+
+.opt-bud .email-container.form-1.has-name .field input[name="name"] {
+	display: block;
+}

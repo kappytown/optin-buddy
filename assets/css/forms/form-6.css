@@ -1,0 +1,53 @@
+.opt-bud.form-6 {
+	position: sticky;
+	z-index: 1000000;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: auto;
+	margin: 0;
+}
+
+.opt-bud.form-6 .email-container.form-6 {
+	position: fixed;
+	width: 100%;
+	top: -300px;
+	transition: top 2s ease-in;
+	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
+}
+
+.opt-bud .email-container.form-6 {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0px;
+	padding: 10px;
+}
+
+.opt-bud .email-container.form-6 .field {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.opt-bud .email-container.form-6 .field .body {
+	font-size: 1.1em;
+	/* flex: 1; */
+}
+
+.opt-bud .email-container.form-6 .field>input {
+	flex: 1;
+}
+
+.opt-bud .email-container.form-6.has-name .field input[name="name"] {
+	display: block;
+}
+
+.opt-bud .email-container.form-6 .message {
+	flex: 1;
+	text-align: center;
+	margin-top: 0;
+}
+
+.opt-bud .email-container.form-6.submitted .field {
+	flex-direction: column;
+}

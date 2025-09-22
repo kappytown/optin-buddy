@@ -1,0 +1,116 @@
+.obp-admin .container {
+	max-width: 900px;
+}
+
+/* Navigation Styles */
+
+/* Main Content Styles */
+
+/* Dashboard Styles */
+.obp-admin .dashboard .flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.obp-admin .dashboard .flexbox .row {
+	flex-basis: 900px;
+}
+
+.obp-admin .dashboard .flexbox.column {
+	flex-direction: column;
+}
+
+.obp-admin .dashboard .flexbox.align-start {
+	align-items: flex-start;
+}
+
+.obp-admin .dashboard .flexbox.justify-center {
+	justify-content: center;
+}
+
+.obp-admin .dashboard .box {
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	padding: 15px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100px;
+	box-shadow: var(--main-box-shadow);
+}
+
+.obp-admin .dashboard .box.daily,
+.obp-admin .dashboard .box.monthly,
+.obp-admin .dashboard .box.yearly {
+	flex: 1;
+}
+
+.obp-admin .dashboard .box .title {
+	font-size: 15px;
+}
+
+.obp-admin .dashboard .box .value {
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.obp-admin .dashboard .box.chart h5,
+.obp-admin .dashboard .box.list h5 {
+	margin-bottom: 10px;
+}
+
+.obp-admin .dashboard .chart-wrapper {
+	width: calc(100% - 10px);
+	height: auto;
+	margin: 20px auto;
+	position: relative;
+}
+
+.obp-admin .dashboard .box.chart {
+	flex: 1 1 300px;
+	min-width: 300px;
+}
+
+.obp-admin canvas {
+	display: inline-block !important;
+	max-height: 250px;
+}
+
+.obp-admin .dashboard .box.list {
+	flex: 1;
+	text-align: unset;
+	align-items: unset;
+}
+
+/* Custom Reports */
+.obp-admin span.icon {
+	font-weight: bold;
+}
+
+.obp-admin span.icon.outlined.check {
+	color: #2baa3a;
+}
+
+.obp-admin span.icon.outlined.close {
+	color: #aa2b2b;
+}
+
+.obp-admin .actions {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+.obp-admin .actions div.field {
+	margin-bottom: 0;
+}
+
+.obp-admin .report-details .title {
+	font-size: 1.1em;
+	font-weight: 500;
+	margin-bottom: 10px;
+}

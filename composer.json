@@ -1,0 +1,32 @@
+{
+    "name": "kappytown/optin-buddy",
+    "description": "A plugin that displays an email signup form that can also send customer data attributes",
+    "type": "wordpress-plugin",
+    "keywords": [
+        "optin", 
+        "form", 
+        "email", 
+        "subscribe",
+        "signup",
+        "form", 
+        "marketing", 
+        "wordpress"
+    ],
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Trevor Nielson",
+            "email": "trevordnielson@gmail.com",
+            "homepage": "https://trevornielson.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "./includes"
+        }
+    }
+}

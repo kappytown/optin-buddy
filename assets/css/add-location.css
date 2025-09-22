@@ -1,0 +1,11 @@
+.add-new-location>div {
+	margin-bottom: 20px;
+}
+
+.add-new-location input,
+.add-new-location select {
+	display: block;
+	margin-top: 5px;
+	width: 100%;
+	max-width: 100%;
+}

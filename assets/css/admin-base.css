@@ -1,0 +1,553 @@
+:root {
+	--main-text-color: #555;
+	--main-text-color-lt: #999;
+	--main-text-font: Sen, helvetica, sans-serif;
+	--main-font-size: 13px;
+	--main-border-color: #ccc;
+	--main-border-hover: #999;
+	--main-box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+	--font-weight: 600;
+	--white: #fff;
+	--blue: #2271b1;
+	--blue-hover: #0a4b78;
+	--lt-gray: #f6f7f7;
+	--lt-gray-hover: #f0f0f1;
+	--md-gray: #e7e7e7;
+	--red: #cc1818;
+	--red-hover: #b11414;
+	--disabled-bg-color: #eee;
+	--disabled-color: #999;
+}
+
+.obp-admin * {
+	/* css reset */
+	margin: 0;
+	/* padding: 0;
+	border: none; */
+	border-radius: 0;
+	font-size: var(--main-font-size);
+	font-family: var(--main-text-font);
+	box-sizing: border-box;
+	box-shadow: none;
+	color: inherit;
+	line-height: normal;
+	outline: 0;
+	letter-spacing: 1px;
+}
+
+.obp-admin,
+.obp-admin div,
+.obp-admin span,
+.obp-admin p,
+.obp-admin a,
+.obp-admin li,
+.obp-admin input:not([type="checkbox"], [type="radio"], [type="color"]),
+.obp-admin label,
+.obp-admin button {
+	width: auto;
+	height: auto;
+	font-size: var(--main-font-size);
+	line-height: 17px;
+	color: var(--main-text-color);
+	/* background-color: initial; */
+	font-family: var(--main-text-font);
+}
+
+.obp-admin a {
+	color: var(--blue);
+}
+
+.obp-admin b,
+.obp-admin strong {
+	font-weight: var(--font-weight);
+}
+
+.obp-admin p {
+	margin: 10px 0;
+}
+
+.obp-admin h1 {
+	font-size: 1.4em;
+}
+
+.obp-admin h2,
+.obp-admin h3 {
+	font-size: 1.3em;
+}
+
+.obp-admin h4 {
+	font-size: 1.2em;
+}
+
+.obp-admin h5 {
+	font-size: 1.1em;
+}
+
+.obp-admin h6 {
+	font-size: 1em;
+	font-weight: var(--font-weight);
+}
+
+.obp-admin .inline {
+	display: inline-block;
+}
+
+.obp-admin button.button-small {
+	min-height: 25px !important;
+	line-height: 1.2 !important;
+	font-size: 11px !important;
+	padding: 0 8px !important;
+}
+
+.obp-admin button.button {
+	color: var(--blue);
+	border-color: var(--blue);
+	background: var(--lt-gray);
+	vertical-align: text-bottom;
+}
+
+.obp-admin button.button:hover {
+	background: var(--lt-gray-hover);
+	border-color: var(--blue-hover);
+	color: var(--blue-hover);
+}
+
+.obp-admin button.button-primary {
+	background: var(--blue);
+	border-color: var(--blue);
+	color: var(--white);
+	text-decoration: none;
+	text-shadow: none;
+}
+
+.obp-admin button.button-primary:hover {
+	background: var(--blue-hover);
+	border-color: var(--blue-hover);
+	color: var(--white);
+}
+
+.obp-admin button.button-danger {
+	background-color: var(--white);
+	color: var(--red);
+	border: 1px solid var(--red);
+}
+
+.obp-admin button.button-danger:hover {
+	background-color: var(--white);
+	color: var(--red-hover);
+	border: 1px solid var(--red-hover);
+}
+
+.obp-admin label {
+	font-weight: 500;
+}
+
+.obp-admin input:not([type="checkbox"], [type="radio"], .hidden),
+.obp-admin textarea,
+.obp-admin select {
+	display: block;
+	width: 100%;
+	/* max-width: 600px; */
+	min-width: 150px;
+	border-radius: 4px;
+	background-color: var(--white);
+}
+
+.obp-admin input[type="checkbox"],
+.obp-admin input[type="radio"] {
+	margin-top: 0;
+	display: inline-block;
+}
+
+.obp-admin input,
+.obp-admin textarea,
+.obp-admin select {
+	border: 1px solid var(--main-border-color);
+}
+
+.obp-admin textarea {
+	padding: 5px;
+}
+
+.obp-admin input:hover,
+.obp-admin textarea:hover,
+.obp-admin select:hover {
+	border-color: var(--main-border-hover);
+	cursor: pointer;
+}
+
+.obp-admin input:not([type="checkbox"], [type="radio"], [type="color"], [type="button"], [type="submit"]):hover,
+.obp-admin textarea:hover {
+	cursor: text;
+}
+
+/* Tabs */
+.obp-admin ul.tabs {
+	margin: 0 0 20px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.obp-admin ul.tabs:after {
+	content: '';
+	height: 1px;
+	width: 100%;
+	background-color: var(--blue);
+	display: block;
+}
+
+.obp-admin li.tab {
+	display: inline-block;
+	border: 1px solid var(--blue);
+	padding: 5px 10px;
+	border-radius: 5px 5px 0 0;
+	margin: 0 0 0 0;
+	border-bottom: 0;
+	cursor: pointer;
+	background-color: var(--white);
+	color: var(--blue);
+}
+
+.obp-admin li.tab.selected {
+	background-color: var(--blue);
+	color: var(--white);
+	border-color: var(--blue);
+}
+
+.obp-admin li.tab:hover {
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+.obp-admin .desc {
+	display: inline-block;
+	color: var(--main-text-color-lt);
+	font-size: 90%;
+	font-style: italic;
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+
+.obp-admin div.field {
+	margin-bottom: 10px;
+}
+
+.obp-admin .note {
+	border: 1px solid var(--main-border-color);
+	padding: 10px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px -5px rgb(0 0 0);
+	background-color: #eee;
+}
+
+.obp-admin .note ul {
+	list-style-type: disc;
+	padding-left: 40px;
+}
+
+.obp-admin .email-form-widget {
+	margin: 20px 0;
+}
+
+.obp-admin table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: var(--white);
+	border: 1px solid var(--main-border-color);
+}
+
+.obp-admin table tr {
+	border-bottom: 1px solid var(--main-border-color);
+}
+
+.obp-admin table th,
+.obp-admin table td {
+	vertical-align: top;
+	text-align: left;
+	padding: 8px;
+}
+
+.obp-admin table th {
+	font-weight: var(--font-weight);
+}
+
+/* Adds a background and border around each section of the location (area > type > value) */
+.obp-admin td.location>span,
+.obp-admin td div.location>span {
+	background: rgba(34, 113, 177, 0.1);
+	padding: 1px 3px;
+	border: thin solid rgba(34, 113, 177, 0.5);
+	margin: 0;
+	display: inline-block;
+}
+
+.obp-admin .required {
+	color: var(--red);
+	font-weight: bold;
+}
+
+/* Slide Toggle */
+.obp-admin .slide-toggle,
+.obp-admin .slide-toggle * {
+	box-sizing: border-box;
+	outline: 0;
+}
+
+.obp-admin .slide-toggle div,
+.obp-admin .slide-toggle span {
+	position: relative;
+}
+
+.obp-admin .slide-toggle {
+	border: 1px solid var(--main-border-color);
+	border-radius: 5px;
+	background-color: var(--white);
+	margin-bottom: 10px;
+	transition: all 0.2s ease-out;
+}
+
+.obp-admin .slide-toggle.show {
+	box-shadow: var(--main-box-shadow);
+}
+
+.obp-admin .slide-toggle .title {
+	font-weight: bold;
+	background-color: var(--white);
+	padding: 5px;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 5px;
+}
+
+.obp-admin .slide-toggle.show .title {
+	background-color: var(--md-gray);
+	border-bottom: 1px solid var(--main-border-color);
+	border-radius: 5px 5px 0 0;
+}
+
+.obp-admin .slide-toggle .title:hover {
+	background-color: var(--md-gray);
+}
+
+.obp-admin .slide-toggle .title:after {
+	content: "▼";
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	pointer-events: none;
+	transition: all 0.2s ease-out;
+}
+
+.obp-admin .slide-toggle.show .title:after {
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.obp-admin .slide-toggle .body {
+	display: none;
+	padding: 10px;
+}
+
+
+/* Modal Preview */
+#preview-form-dialog .preview-form>.header {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#preview-form-dialog .preview-form .header button:first-child {
+	border-radius: 5px 0 0 5px;
+}
+
+#preview-form-dialog .preview-form .header button:last-child {
+	margin-left: -1px;
+	border-radius: 0 5px 5px 0;
+}
+
+#preview-form-dialog .preview-form .header button.selected {
+	font-weight: 600;
+	border-width: 2px;
+}
+
+#preview-form-dialog .preview-form .header button:active,
+#preview-form-dialog .preview-form .header button:focus,
+#preview-form-dialog .preview-form .header button:target,
+#preview-form-dialog .preview-form .header button:hover,
+#preview-form-dialog .preview-form .header button:visited {
+	/* outline: 0 !important; */
+	/* border-width: 1px; */
+	box-shadow: none !important;
+}
+
+
+/* The following classes allow scrolling on mobile device */
+#preview-form-dialog div.preview-wrapper {
+	width: 100%;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+}
+
+#preview-form-dialog div.show-preview.desktop {
+	/* have to subtract padding (30px) and border width (2px) */
+	width: 568px;
+	margin: 0;
+}
+
+/* Force container width to be 570px */
+#preview-form-dialog div.show-preview.desktop .email-container {
+	/* have to subtract padding (30px) and border width (2px) */
+	max-width: 568px;
+	margin: 0;
+}
+
+#preview-form-dialog div.show-preview.mobile {
+	width: 320px;
+	margin: 0 auto;
+}
+
+/* Force container width to be 320px */
+#preview-form-dialog div.show-preview.mobile .email-container {
+	width: 320px;
+	margin: 0;
+}
+
+
+/* 
+	GOOGLE FONTS https://fonts.google.com/icons
+	e.g. <button class="button icon"><span class="icon outlined">search</span> TEXT</button>
+*/
+.obp-admin button.icon {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.obp-admin i.icon.outlined,
+.obp-admin span.icon.outlined {
+	font-family: 'Material Symbols Outlined';
+	font-size: 16px;
+	color: inherit;
+	-webkit-font-smoothing: antialiased;
+}
+
+.obp-admin .hidden {
+	display: none;
+}
+
+.obp-admin .deactivated {
+	display: block;
+	font-size: 11px;
+	color: var(--red);
+}
+
+/* Pagination Styles */
+.obp-admin .pagination-container {
+	display: inline-flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+.obp-admin .pagination {
+	box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 10%);
+	margin-top: 10px;
+	display: inline-flex;
+	border: 1px solid var(--main-border-color);
+}
+
+.obp-admin .pagination a {
+	border-left: 1px solid var(--main-border-color);
+	padding: 5px;
+	background-color: var(--white);
+	text-decoration: none;
+	min-width: 30px;
+	text-align: center;
+	margin-left: -1px;
+}
+
+.obp-admin .pagination a:hover:not(.disabled, .current-page) {
+	color: #2271b1;
+}
+
+.obp-admin .pagination a:focus {
+	box-shadow: none;
+}
+
+.obp-admin .pagination a.current-page {
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+.obp-admin .pagination a.current-page:hover,
+.obp-admin .pagination a.disabled:hover {
+	cursor: default;
+}
+
+.obp-admin .pagination a.disabled {
+	background-color: var(--disabled-bg-color);
+	color: var(--disabled-color);
+}
+
+/* Warning Styles */
+.obp-admin .warning {
+	padding: 5px;
+	border: 1px solid var(--red);
+	border-radius: 5px;
+	background: rgba(211, 45, 39, .1);
+}
+
+/* Loader Styles */
+/* To prevent any element interaction while loader is shown */
+.loader-wrapper {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	/* background: rgba(0, 0, 0, .2); */
+	z-index: 10000000;
+}
+
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.loader .spinner {
+	all: initial;
+	display: inline-block;
+	margin: 10px 0;
+	width: 35px;
+	height: 35px;
+	border: 4px solid rgba(0, 0, 0, .2);
+	border-left-color: #2271b1;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, .5);
+	animation: spin 1s ease-in-out infinite;
+}
+
+.context .loader .spinner {
+	width: 20px;
+	height: 20px;
+	border-width: 3px;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.mce-i-button {
+	font: normal 20px/1 dashicons !important;
+}
+
+.mce-i-button::before {
+	content: "\f11a";
+}

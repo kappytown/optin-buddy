@@ -1,0 +1,44 @@
+.obp-admin.section_oauth {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--white);
+	z-index: 10000000;
+	padding: 20px;
+}
+
+.obp-admin.section_oauth .provider {
+	width: 250px;
+	border: 1px solid var(--main-border-color);
+	border-radius: 5px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	box-shadow: var(--main-box-shadow);
+}
+
+.obp-admin.section_oauth .provider .logo {
+	max-width: 200px;
+	height: auto;
+	width: 100%;
+}
+
+.obp-admin.section_oauth .provider .logo img {
+	width: 100%;
+	height: auto;
+}
+
+.obp-admin.section_oauth .error {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid var(--red);
+	border-radius: 5px;
+	color: var(--red);
+	background-color: rgb(208 43 43 / 10%);
+}

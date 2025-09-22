@@ -1,0 +1,72 @@
+.opt-bud .email-container.form-5 {
+	max-width: 700px;
+	padding: 0;
+	background: transparent;
+	border: none;
+}
+
+.opt-bud .email-container.form-5 .image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+.email-container.form-5 h3,
+.email-container.form-5 p,
+.email-container.form-5 div,
+.email-container.form-5 span {
+	color: #fff;
+}
+
+.email-container.form-5 p,
+.email-container.form-5 div,
+.email-container.form-5 span {
+	font-weight: 300;
+}
+
+.opt-bud .email-container.form-5 form {
+	padding: 20px;
+	background: rgba(0, 0, 0, .5);
+}
+
+.opt-bud .email-container.form-5 .field {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	white-space: nowrap;
+	gap: 10px;
+}
+
+.opt-bud .email-container.form-5 .field input {
+	/* flex-basis: 100%;
+	flex-grow: 1; */
+	flex: 100 1 auto;
+}
+
+.opt-bud .email-container.form-5 .field button {
+	/* flex-basis: 100%;
+	flex-grow: 1; */
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+/* IF NAME FIELD IS ADDED... */
+.opt-bud .email-container.form-5.has-name .field input {
+	/* 170 (button width + gap + gap) / 2 */
+	/* flex-basis: calc(50% - 60px); */
+	min-width: 150px;
+}
+
+.opt-bud .email-container.form-5.has-name .field {
+	flex-direction: column;
+}
+
+.opt-bud .email-container.form-5.has-name .field input[name="name"] {
+	display: block;
+}

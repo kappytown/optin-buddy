@@ -1,0 +1,228 @@
+/* SECTION: FORM */
+/* SECTION: CHOOSE TYPE */
+/* SECTION: CHOOSE TEMPLATE */
+.obp-admin .icons {
+	display: flex;
+	flex-direction: column;
+	column-gap: 20px;
+	row-gap: 20px;
+	margin-top: 20px;
+}
+
+.obp-admin .icons .icon {
+	display: flex;
+	column-gap: 20px;
+	row-gap: 10px;
+	flex-wrap: wrap;
+	align-items: center;
+	cursor: pointer;
+}
+
+.obp-admin .icons .icon {
+	transition: all .2s ease;
+}
+
+.obp-admin .icons .image img {
+	width: 100%;
+	opacity: .7;
+}
+
+.obp-admin .section-choose-type,
+.obp-admin .section-choose-template {
+	max-width: 800px;
+}
+
+.obp-admin .section-choose-template .icons .image img {
+	border: 1px solid var(--main-border-color);
+}
+
+.obp-admin .section-choose-type .icons .icon .image {
+	flex: 1 0 125px;
+	max-width: 125px;
+}
+
+.obp-admin .section-choose-template .icons .icon .image {
+	flex: 1 0 300px;
+	max-width: 300px;
+}
+
+.obp-admin .icons .icon .details {
+	flex: 1 0 200px;
+}
+
+.obp-admin .icons .icon:hover .image img {
+	box-shadow: var(--main-box-shadow);
+	opacity: 1;
+}
+
+/* SECTION: EMAIL TEMPLATE */
+.obp-admin .opt-bud {
+	margin: 0;
+}
+
+.obp-admin .email-container {
+	max-width: 100% !important;
+	width: 100% !important;
+	margin: 0 !important;
+	z-index: 1 !important;
+}
+
+.obp-admin .email-container .header:is(:hover, :focus),
+.obp-admin .email-container .body:is(:hover, :focus),
+.obp-admin .email-container button>span:is(:hover, :focus),
+.obp-admin .email-container .disclaimer:is(:hover, :focus) {
+	cursor: text;
+	outline: #aaa dashed 2px;
+	outline-offset: 5px;
+}
+
+/* SECTION: FORM DETAILS */
+.obp-admin .flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 50px;
+	row-gap: 30px;
+	max-width: 1200px;
+}
+
+.obp-admin .flex-container .flex-form-layout {
+	flex: 100 1 500px;
+}
+
+.obp-admin .flex-container .flex-form-settings {
+	flex: 1 1 350px;
+}
+
+/* FORM LAYOUT */
+
+
+/* FORM DETAILS */
+/*.obp-admin input:not([type="checkbox"], [type="radio"]),
+.obp-admin button,
+.obp-admin textarea,
+.obp-admin select {
+	max-width: 100%;
+}*/
+
+.obp-admin .flex {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.obp-admin .flex.inline {
+	display: inline-flex;
+}
+
+.obp-admin .flex>input[type="checkbox"],
+.obp-admin .flex>input[type="radio"] {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.obp-admin .flex.center {
+	align-items: center;
+}
+
+.obp-admin .flex.gap5 {
+	gap: 5px;
+}
+
+.obp-admin .flex.gap20 {
+	gap: 20px;
+}
+
+.obp-admin .flex.nowrap {
+	flex-wrap: nowrap;
+	white-space: nowrap;
+}
+
+.obp-admin .section-form-details section>.title {
+	border-bottom: 1px solid var(--blue);
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+	color: var(--blue);
+}
+
+/* CHANGE IMAGE */
+.obp-admin .section-change-image .image-wrapper {
+	display: flex;
+	gap: 10px;
+	align-items: flex-end;
+}
+
+.obp-admin .section-change-image .image-selector #image-preview {
+	width: 80px;
+	height: 50px;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+}
+
+/* CHANGE DISPLAY */
+
+/* SECTION - FORM SELECTION */
+.obp-admin .section-form-selection>.flex .flex {
+	flex-direction: column-reverse;
+	flex-grow: 1;
+	flex-basis: 0;
+	align-items: flex-start;
+}
+
+.obp-admin .section-form-selection .icon {
+	width: 50px;
+	height: 75px;
+}
+
+.obp-admin .section-form-selection .icon img {
+	height: 100%;
+	box-shadow: var(--main-box-shadow);
+	border: 1px solid var(--main-border-color);
+}
+
+.obp-admin .section-form-selection .name {
+	display: block;
+}
+
+.obp-admin .section-form-selection .change-template {
+	margin-top: 20px;
+}
+
+/* Flex Color Styles */
+.obp-admin .section-change-styles .flex.colors .field {
+	flex: 1;
+}
+
+.obp-admin .section-change-styles .flex.colors .field input {
+	width: 100%;
+	min-width: 50px;
+}
+
+.obp-admin .deactivate label {
+	color: var(--red);
+}
+
+/* SECTION - CUSTOM EMAIL */
+.obp-admin .section-custom-email .email-notice {
+	border: 1px solid #aaa;
+	padding: 10px;
+	margin: 10px 10px 0 10px;
+	background-color: #eee;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+/* SECTION */
+.obp-admin section {
+	margin-bottom: 20px;
+}
+
+.obp-admin .page-location .obp-admin .deactivate>label {
+	color: #c00000;
+}
+
+.obp-admin .form-actions {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
