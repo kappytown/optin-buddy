@@ -10,7 +10,7 @@ OptinBuddy is an email optin form plugin for WordPress.
 
 == Description ==
 
-The OptinBuddy plugin is a powerful email subscription plugin that integrates with ActiveCampaign, Contact Contact, ConvertKit, MailChimp, MailerLite, and WordPress.
+The OptinBuddy plugin is a powerful email subscription plugin that integrates with ActiveCampaign, Contact Contact, ConvertKit, flodesk, MailChimp, MailerLite, and WordPress.
 
 == Installation ==
 
@@ -27,7 +27,7 @@ The OptinBuddy plugin is a powerful email subscription plugin that integrates wi
 3. Visit **Plugins**.
 3. Activate the OptinBuddy plugin.
 
-= Once Activated =
+== Once Activated ==
 
 1. Visit **OptinbBuddy > Dashboard**.
 2. Connect to your Email Provider from the list.
@@ -36,7 +36,7 @@ The OptinBuddy plugin is a powerful email subscription plugin that integrates wi
 5. Save Form.
 6. View your new optin form on your WordPress blog.
 
-= Once Configured =
+== Once Configured ==
 
 * OptinBuddy provides the ability to measure the success of your forms through several reporting features. These reports will give you insight as to how well each form is performing, If you notice a form isn't performing well, you may want to update it's location and/or other details.
 * Let us know if you have any feature enhancment ideas or experience issues while using OptinBuddy on our Contact Us page.
